@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#000000">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp">
+        <RelativeLayout
+            android:id="@+id/caption_bar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#FFFFFF"
+            android:layout_alignParentBottom="true">
+            <ImageView
+                android:id="@+id/anonymous_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/anon"
+                android:layout_centerVertical="true"/>
+            <EditText
+                android:id="@+id/message_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/anonymous_btn"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textSize="13sp"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/image_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/caption_bar"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/cancel_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/no"
+            android:padding="5dp"
+            android:layout_marginLeft="16dp"/>
+        <ImageView
+            android:id="@+id/send_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/yes"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Preview"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

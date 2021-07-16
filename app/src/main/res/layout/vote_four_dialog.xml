@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/how_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="How would you describe what's happening at this event?"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/remark_edit"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/how_describe"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="32dp"
+            android:paddingLeft="4dp"
+            android:background="#00000000"
+            android:gravity="top"
+            android:hint="Write something here..."
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="#FFFFFF" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@id/remark_edit"
+            android:layout_alignTop="@id/remark_edit"
+            android:layout_alignRight="@id/remark_edit"
+            android:background="@color/colorPrimary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@id/remark_edit"
+            android:layout_alignRight="@id/remark_edit"
+            android:layout_alignBottom="@id/remark_edit"
+            android:background="@color/colorPrimary" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@id/remark_edit"
+            android:layout_alignTop="@id/remark_edit"
+            android:layout_alignBottom="@id/remark_edit"
+            android:background="@color/colorPrimary" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/remark_edit"
+            android:layout_alignRight="@id/remark_edit"
+            android:layout_alignBottom="@id/remark_edit"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/remark_edit"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="150dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/no_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/no" />
+
+            <ImageView
+                android:id="@+id/yes_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/yes" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Event Name"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:textSize="22sp"/>
+
+        <RelativeLayout
+            android:id="@+id/event_info_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name">
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Appearance or Signing"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/type"
+                android:layout_centerHorizontal="true"
+                android:text="Auto, Boat, and Air"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/event_counter_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_info_holder"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/population_img"
+                        android:layout_width="@dimen/detail_stat_dim"
+                        android:layout_height="@dimen/detail_stat_dim"
+                        android:src="@drawable/people" />
+
+                    <TextView
+                        android:id="@+id/population_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/stat_spacing"
+                        android:layout_toRightOf="@id/population_img"
+                        android:text="10"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/avg_age_img"
+                        android:layout_width="@dimen/detail_stat_dim"
+                        android:layout_height="@dimen/detail_stat_dim"
+                        android:src="@drawable/age" />
+
+                    <TextView
+                        android:id="@+id/avg_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/stat_spacing"
+                        android:layout_toRightOf="@id/avg_age_img"
+                        android:text="10"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/male_img"
+                        android:layout_width="@dimen/detail_stat_dim"
+                        android:layout_height="@dimen/detail_stat_dim"
+                        android:src="@drawable/male" />
+
+                    <TextView
+                        android:id="@+id/male_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/stat_spacing"
+                        android:layout_toRightOf="@id/male_img"
+                        android:text="10"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/female_img"
+                        android:layout_width="@dimen/detail_stat_dim"
+                        android:layout_height="@dimen/detail_stat_dim"
+                        android:src="@drawable/female" />
+
+                    <TextView
+                        android:id="@+id/female_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/stat_spacing"
+                        android:layout_toRightOf="@id/female_img"
+                        android:text="10"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/view_chat_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_counter_holder"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="View Chat"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/remarks_static"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_chat_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Remarks:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/remarks_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/remarks_static"
+            android:layout_marginTop="8dp"></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="190dp"
+    android:layout_height="225dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/left_line"
+            android:layout_width="9dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true" />
+
+        <View
+            android:id="@+id/right_line"
+            android:layout_width="9dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:id="@+id/event_img"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/right_line"
+            android:layout_toRightOf="@id/left_line"
+            android:src="@drawable/eventplaceholder"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/event_img"
+            android:layout_toLeftOf="@id/right_line"
+            android:layout_toRightOf="@id/left_line"
+            android:background="#FFFFFF">
+
+
+            <TextView
+                android:id="@+id/event_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Event Title"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_title"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="@dimen/event_item_spacing"
+                android:text="-Type"
+                android:textColor="#B1B1B1"
+                android:textSize="@dimen/event_textsize" />
+
+            <TextView
+                android:id="@+id/num_going"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/type"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="@dimen/event_item_spacing"
+                android:text="-00 People are going"
+                android:textColor="#B1B1B1"
+                android:textSize="@dimen/event_textsize" />
+
+            <TextView
+                android:id="@+id/num_here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/num_going"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="@dimen/event_item_spacing"
+                android:text="-00 People are here"
+                android:textColor="#B1B1B1"
+                android:textSize="@dimen/event_textsize" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

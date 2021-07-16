@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:layout_marginTop="2dp"
+    android:background="#FFFFFF">
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nov 28, 2:17 PM"
+        android:layout_marginLeft="16dp"
+        android:textColor="#5B5B5B"
+        android:layout_marginBottom="-2dp"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="luken.TXC:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/timestamp"/>
+    <TextView
+        android:id="@+id/message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:layout_below="@id/timestamp"
+        android:layout_marginRight="60dp"
+        android:layout_toRightOf="@id/username"
+        android:text="Wow look at this message yeeet"
+        android:layout_marginLeft="4dp"/>
+    <ImageView
+        android:id="@+id/heart"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/heart_outline"/>
+    <TextView
+        android:id="@+id/heart_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000"
+        android:textSize="9sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="2dp"
+        android:layout_alignBottom="@id/heart"
+        android:textColor="#000000"/>
+    <ImageView
+        android:id="@+id/chat_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:scaleType="matrix"
+        android:layout_below="@id/message_text"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>

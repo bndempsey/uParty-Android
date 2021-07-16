@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginFrags.ConfirmEmailFragment"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/uparty_img"
+            android:layout_width="@dimen/logowidth"
+            android:layout_height="@dimen/logoheight"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:src="@drawable/uparty"/>
+        <TextView
+            android:id="@+id/sent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uparty_img"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#FFFFFF"
+            android:textColor="@color/colorPrimary"
+            android:text="We Sent You a Confirmation Email"
+            android:gravity="center"
+            android:shadowColor="@color/colorPrimary"
+            android:textSize="26sp"
+            />
+
+        <TextView
+            android:id="@+id/resend_button"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/sent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorPrimary"
+            android:text="Resend Confirmation"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logowidth">250dp</dimen>
+    <dimen name="logoheight">70dp</dimen>
+    <dimen name="tabimgdim">25dp</dimen>
+    <dimen name="detail_stat_dim">40dp</dimen>
+    <dimen name="stat_spacing">4dp</dimen>
+    <dimen name="arrow_dim">20dp</dimen>
+    <dimen name="settings_item_spacing">12dp</dimen>
+    <dimen name="event_item_spacing">0dp</dimen>
+    <dimen name="event_textsize">12sp</dimen>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".loginFrags.LaunchFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/uparty_img"
+            android:layout_width="@dimen/logowidth"
+            android:layout_height="@dimen/logoheight"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/uparty"
+            android:layout_marginTop="175dp"/>
+        <TextView
+            android:id="@+id/login_button"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/uparty_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorPrimary"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/signup_button"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/login_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorPrimary"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

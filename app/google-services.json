@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "2902643382",
+    "firebase_url": "https://uparty-22cc0.firebaseio.com",
+    "project_id": "uparty-22cc0",
+    "storage_bucket": "uparty-22cc0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2902643382:android:82fc469a8252ad88",
+        "android_client_info": {
+          "package_name": "com.ggi.uparty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2902643382-u6akqju1epn3b552rsitrk4hh330dnmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANGLElQNQk9QBI1zzJFAUscZKHukxOTnY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
